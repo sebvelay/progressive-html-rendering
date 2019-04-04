@@ -1,6 +1,6 @@
-package com.zenika.demo.controller;
+package com.sebastienvelay.demo.controller;
 
-import com.zenika.demo.service.ExampleService;
+import com.sebastienvelay.demo.service.ExampleService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

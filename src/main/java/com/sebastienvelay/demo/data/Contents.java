@@ -1,4 +1,4 @@
-package com.zenika.demo.data;
+package com.sebastienvelay.demo.data;
 
 import lombok.Getter;
 import lombok.Setter;

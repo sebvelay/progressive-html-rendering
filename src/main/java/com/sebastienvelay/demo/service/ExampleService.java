@@ -1,6 +1,6 @@
-package com.zenika.demo.service;
+package com.sebastienvelay.demo.service;
 
-import com.zenika.demo.data.Contents;
+import com.sebastienvelay.demo.data.Contents;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
