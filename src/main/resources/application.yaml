@@ -1,0 +1,19 @@
+application.port: 8181
+contents:
+  data:
+    - content: Hello
+      delay: 1000
+    - content: Bonjour
+      delay: 5000
+    - content: Ola
+      delay: 1000
+    - content: Guten Tag
+      delay: 2000
+    - content: Konnichiwa
+      delay: 2000
+    - content: Bon vèspre
+      delay: 500
+    - content: Bon vèspre
+      delay: 2000
+    - content: Sawatdi khrap
+      delay: 4000

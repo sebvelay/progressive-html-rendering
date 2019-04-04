@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reactive Revenge</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="jumbotron">
+    <h1 class="display-6">
+        Hello, je suis une page HTML qui se rend de manière progressive<br>
+        et qui inclus un flux de données reactives !</h1>
+        <p class="lead">
+            Je fonctionne grace au protocole HTTP/1.1 et le transfer-encoding: chunked.<br />
+        </p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 mt-4" th:each="item : ${maList}">
+            <div class="card">
+                <img class="card-img-top" src="https://picsum.photos/200/100/?random">
+                <p class="card-text">
+                    [(${item.content})], j'ai été volontairement bloqué [(${item.delay})] ms avant d'être envoyé
+                    dans le flux.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-auto py-1">
+    <div class="jumbotron">
+        <p class="lead">
+            With ❤ by Sebastien Velay. Propulsé par Spring Webflux, Thymeleaf and Bootstrap️<br />
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
