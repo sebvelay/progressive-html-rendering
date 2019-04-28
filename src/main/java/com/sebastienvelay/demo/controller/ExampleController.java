@@ -18,7 +18,7 @@ public class ExampleController {
     }
 
     @GetMapping
-    public Mono<String> coucou(Model model, ServerWebExchange exchange) {
+    public Mono<String> reactiveController(Model model, ServerWebExchange exchange) {
 
         model.addAttribute("maList", new ReactiveDataDriverContextVariable(exampleService.getContent(), 1));
 
